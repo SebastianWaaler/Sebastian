@@ -1,0 +1,175 @@
+body{
+    background-color: darkslategray;
+    padding: 10%;
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item1 item2 item3"
+      "item4 item4 item5"
+      "item6 item6 item6";
+      background-color: lightslategray;
+      width: 100%;
+      height: 100%;
+      padding: 1%;
+
+  }
+
+  .second-container {
+    background-color: lightslategray;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "outcome1 outcome2 outcome3"; 
+  }
+  .outcome1 { grid-area: outcome1; }
+  .outcome2 { grid-area: outcome2; }
+  .outcome3 { grid-area: outcome3; }
+ 
+
+  
+  .item1 { 
+    grid-area: item1;
+    position: relative;
+
+}
+  
+  .item2 { 
+    grid-area: item2;
+    position: relative;
+}
+  
+  .item3 { 
+    grid-area: item3;
+    position: relative;
+}
+  
+  .item4 { 
+    grid-area: item4;
+    position: absolute;
+    top: 85%;
+}
+  
+  .item5 { 
+    grid-area: item5;
+    position: absolute;
+    top: 85%;
+    right: 10%;
+}
+
+  .item6 { 
+    grid-area: item6;
+    background-color: rgba(220, 220, 220, 0.8);
+    position: absolute;
+    padding: 5px;
+    top: 140%;
+    width: 78%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /*https://getcssscan.com/css-box-shadow-examples*/
+  }
+  
+  
+
+  h2{
+    text-decoration: underline;
+  }
+
+img{
+    object-fit: contain;
+    max-height: 300px;
+    width: 100%;
+    border-radius: 3px;
+    min-width: 80%;
+   
+    
+  }
+  
+.item-info {
+    background-color: rgba(220, 220, 220, 0.8);
+    position: absolute;
+    top: 70%;
+    padding: 2px;
+    width: 90%;
+    left: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /*https://getcssscan.com/css-box-shadow-examples*/
+}
+
+ .nav {
+    list-style-type: none;
+    padding: 0;
+     
+}
+
+.nav li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    height: 50px
+    
+
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 16px;
+}
+
+.nav li:hover{
+    background-color: #111111;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+} /*Inspirasjon fra https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu*/
+
+.journalist{
+    color: darkgrey;
+}
+
+.active {
+    background-color: #111111;
+}
+
+.news-info {
+    background-color: rgba(220, 220, 220, 0.8);
+    position: absolute;
+    top: 80%;
+    padding: 2px;
+    width: 90%;
+    left: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /*https://getcssscan.com/css-box-shadow-examples*/
+}
+
+.outcome-list{
+  padding: 15px;
+  list-style-type: disc;
+}
+
+.outcome1, .outcome2, .outcome3{
+  border-style: solid;
+  border-width: 2px ;
+  margin: 2px;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+}
